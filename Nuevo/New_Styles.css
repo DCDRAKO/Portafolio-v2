@@ -1,0 +1,198 @@
+body{
+    overflow-y: hidden;
+    font-family: 'Titillium Web', sans-serif;
+}
+#canvas{
+    display: block;
+    height: 98.4vh;
+    width:  300vw;
+    position: absolute;
+}
+
+.main{
+    display: flex;
+    width: 300vw;
+
+}
+
+.home, .gallery, .contact{
+    display: block;
+    width: 100vw;
+    height: 98.4vh;
+    position: relative;
+    z-index: 30;
+}
+
+.home{
+    /* background-color: rgba(98, 171, 171, 0.147); */
+    width: 100vw;
+
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery{
+    background-color: rgba(59, 215, 39, 0.348);
+}
+.contact{
+    background-color: rgba(171, 98, 125, 0.402);
+}
+
+.main_frame{
+    background-color: #04205915;
+    height: 90%;
+    width: 88%;
+    border: 1.5px solid #042059;
+/* las tres lineas de abajo centran los elementos que contiene el main_frame ua que son hijos de este
+sin embargo los hijos estan posicionados entorno al home osea el padre de main__frame, esto gracias al absolute*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main_frame__1{
+    position: absolute;
+    height: 88%;
+    width: 88%;
+    border: 1.5px solid #042159;
+}
+ .main_frame__2{
+    position: absolute;
+    height: 86%;
+    width: 88%;
+    border: 1.5px solid #042059;
+}
+
+.main_frame__3{
+    position: absolute;
+    height: 90%;
+    width: 87%;
+    border: 1.5px solid #042059;
+}
+
+.main_frame__4{
+    position: absolute;
+    height: 90%;
+    width: 86%;
+    border: 1.5px solid #042059;
+}
+
+.title{
+    position: absolute;
+    top: 10%;
+    height: 150px;
+    width: 100%;
+    background-color: #ffffff15;
+    display: flex;
+
+}
+
+.title__decor-1{
+    background-color: #F22E76;
+    position: absolute;
+    height: 170px;
+    width: 25px;
+    transform-origin: center;
+    transform: translate( 20px, -8px);
+}
+.title__decor-2{
+    background-color: #F22E76;
+    position: absolute;
+    height: 140px;
+    width: 25px;
+    transform-origin: center;
+    transform: translate( 70px, 6px);
+}
+.title__decor-3{
+    background-color: #042159;
+    position: absolute;
+    height: 170px;
+    width: 25px;
+    transform-origin: center;
+    transform: translate( 30px, -2px);
+}
+
+.title__decor-4{
+    background-color: #042159;
+    position: absolute;
+    height: 140px;
+    width: 25px;
+    transform-origin: center;
+    transform: translate( 80px, 15px);
+}
+
+
+
+.title__text{
+    font-family: 'Mechsuit';
+    font-size: 1.7em;
+    color: #D1F8FF;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: #00E0FF;
+    transform-origin: center;
+    transform: translate(150px, 25px);
+}
+
+.title__subtitle{
+    font-size: 1.1em;
+    position: absolute;
+    top: 50%;
+    left: 9%;
+    color: #D1F8FF;
+    transform-origin: center;
+    transform: translate(-25px,10px);
+
+}
+
+.info__decor-1{
+    position: absolute;
+    top: 69.2%;
+    left: 5.3%;
+    width: 730px;
+    height: 247px;
+    background-color: #0420599b;
+}
+
+.info__decor-2{
+    position: absolute;
+    top: 68%;
+    left: 4.7%;
+    width: 730px;
+    height: 247px;
+    background-color: #f22e76d1;
+    padding: 1%;
+}
+
+.info__decor-2-text{
+    font-size: 1.2em;
+    color: #D1F8FF;
+}
+.sideBar{
+    position: absolute;
+    width: 70px;
+    transform-origin: center;
+    transform: translate(925px,-10px);
+}
+
+
+
+/*-----------------------RESPONSIVE----------------------------*/
+@media screen and (min-height:990px) and (max-height:1080px) {
+    
+    .info__decor-1{
+        top: 69.7%;
+    }
+    .info__decor-2{
+        top: 68.8%;
+    }
+    
+    .sideBar{
+        width: 82px;
+        transform-origin: center;
+        transform: translate(919px,-10px);
+    }
+
+
+}
